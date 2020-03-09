@@ -32,10 +32,10 @@ shinyServer(function(input, output,session) {
   #Method called when someone select a new project in the drop down menu. This method updates the title 
   #at the top of the page that says "Project:insertProjectName" in big font. 
   output$project_name<-renderUI({
-    project_name<-paste0('Project:',input$selectproject) #sets the project name to be "Project:inserProjectName". The paste/paste0 method concatenates strings
+    project_name <- paste0('Project: ',input$selectproject) #sets the project name to be "Project:inserProjectName". The paste/paste0 method concatenates strings
     #creates a HTML headeding with the project name and uses some CSS to style it.
     h1(project_name, 
-       style = "font-family: 'Arial';margin-left:17px;
+       style = "font-family:'Arial'; margin-left:17px;
         font-weight: 500; line-height: 1.1; 
         color: #2E4053;")
   })
