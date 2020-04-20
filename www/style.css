@@ -1,0 +1,47 @@
+
+/* ~~~~~~~~~~~~ STYLESHEET ~~~~~~~~~~~~~ */
+
+.form-control {
+  border-radius: 4px;
+}
+
+.back {
+  background-color: #ecf0f6;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -10;
+}
+
+.mainpage {
+  background-color: #fffbf0;
+}
+
+#content {
+  margin: 30px;
+}
+
+/* Table cells */
+td {
+  padding-left: 0;
+  padding-right: 10px;
+}
+
+.labelcol {
+  text-align: right;
+  width: 110px;
+}
+
+/* Removes increment arrows from numeric input in Mozilla Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+/* Removes increment arrows from numeric input in Google Chrome */
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
